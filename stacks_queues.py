@@ -31,5 +31,9 @@ class DequeQueue:
         self.queue = init_queue
     def push(self, value):
         self.queue.append(value) # add value to end
-    def pull (self):
+    def pull(self):
         return self.queue.popLeft() # remove first value from queue
+    def pushLeft(self, value): # use deque functionality to add items to either end
+        self.queue.appendleft(value) # add value to beginning
+    def pullRight(self, value): # use deque functionality to remove items from wither end
+        self.queue.pop() # remove value from end
